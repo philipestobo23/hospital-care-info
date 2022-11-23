@@ -3,8 +3,8 @@
 <p align="justify">Develop to save more time and secure the data of patients and to make track of them if they have a virus that can spread faster.</p>
 
 Authors: <br>
-• <a href="">GELI, LEA L.</a> <br>
-• <a href="">TAPIADOR, PRINCE PATRICK G.</a> <br>
+• <a href="#">GELI, LEA L.</a> <br>
+• <a href="#">TAPIADOR, PRINCE PATRICK G.</a> <br>
 
 Programmers: <br>
 • <a href="https://abby2727.github.io/my-portfolio/">Abdul A. Pangandaman</a> <br>
