@@ -13,49 +13,45 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
+
                 <div class="sb-sidenav-menu-heading">Core</div>
                 <a class="nav-link" href="/admin">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
                 </a>
-                <div class="sb-sidenav-menu-heading">HCI INFORMATION</div>
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
-                    aria-expanded="false" aria-controls="collapseLayouts">
+                <div class="sb-sidenav-menu-heading">Info</div>
+
+                {{-- Doctors --}}
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseDoctors"
+                    aria-expanded="false" aria-controls="collapseDoctors">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Doctor
+                    Doctors
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
-                <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne"
+                <div class="collapse" id="collapseDoctors" aria-labelledby="headingOne"
                     data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/doctors">Doctor`s Information</a>
+                        <a class="nav-link" href="{{ route('doctors.create') }}">Add Specialist</a>
+                        <a class="nav-link" href="{{ route('doctors.index') }}">View Specialist</a>
                     </nav>
                 </div>
-                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePatient"
-                    aria-expanded="false" aria-controls="collapsePatient">
+
+                {{-- Patients --}}
+                <a class="nav-link collapsed" href="#" data-bs-toggle="collapse"
+                    data-bs-target="#collapsePatients" aria-expanded="false" aria-controls="collapsePatients">
                     <div class="sb-nav-link-icon"><i class="fas fa-columns"></i></div>
-                    Patient
+                    Patients
                     <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
                 </a>
-                <div class="collapse" id="collapsePatient" aria-labelledby="headingOne"
+                <div class="collapse" id="collapsePatients" aria-labelledby="headingOne"
                     data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="#">Patient`s Appointment</a>
-                    </nav>
-                </div>
-                <div class="collapse" id="collapsePatient" aria-labelledby="headingOne"
-                    data-bs-parent="#sidenavAccordion">
-                    <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="#">Patient`s Record</a>
+                        <a class="nav-link" href="{{ route('patients.create') }}">Add Patient</a>
+                        <a class="nav-link" href="{{ route('patients.index') }}">View Patient</a>
                     </nav>
                 </div>
             </div>
         </div>
-        {{-- <div class="underline-me"></div>
-        <div class="sb-sidenav-footer text-center">
-            <div class="small">Logged in as:</div>
-            ADMIN
-        </div> --}}
     </nav>
 </div>
 <script>
